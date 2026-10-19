@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dmytro Cherkasin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Portfolio_css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+        <section id="home">
+    <br>
+    <!-- NAV BAR -->
+    <ul class="nav">
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#about-me">ABOUT ME</a></li>
+        <li><a href="#projects">MY PROJECTS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+    </ul>
+    <!-- HEADER -->
+    <header class="section-anim" style="margin-top: 30px;">
+        
+            <div class="flex-container" style="align-items: center;">
+                <div class="box">
+                    <img src="My foto.jpg" alt="My foto" style="max-width: 200px; min-width: 150px;">
+                </div>
+                <div class="box">Hello, my name is Dmytro and I'm a beginner Full-stack developer. My goal is to grow as a developer and create visually appealing, interactive, and user-friendly websites and applications that provide a great user experience.</div>
+                <br>
+                <br>
+            </div>
+            <p>On this website, you will find information about me, my skills, and my experience.</p>
+            <p>You can also learn more about my projects, and at the end, you`ll find my contact information if you`re interested in working with me.</p>
+            <p>Thank you for visiting my website!</p>
+    </header>
+        </section>
+
+        <button class="next-btn" onclick="scrollTONextSection()"><span class="arrow">↓</span></button>
+
+    <!-- ABOUT ME -->
+    <section class="section-anim" id="about-me">
+    <h1>About Me</h1>
+
+
+    <div class="flex-container about-row">
+        <div class="box">
+            <h2>Personal Information</h2>
+            <p>Name: Dmytro Cherkasin</p>
+            <p>Age: 19</p>
+            <p>Location: The Netherlands</p>
+            <p>Education: MBO-4 Software Developer</p>
+        </div>
+        <div class="box">
+            <p>Hello, I am an aspiring web developer focused on creating modern, interactive, and visually appealing websites and web applications. My goal is to build solutions that are not only functional, but also intuitive, user-friendly, and enjoyable for a wide range of users. I am passionate about learning new technologies and staying up-to-date with the latest trends in full-stuck development to ensure that my projects are innovative and effective.</p>
+        </div>
+    </div>
+
+
+    <div class="flex-container about-row">
+        <div class="box">
+            <h2>My skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>PHP</li>
+                <li>SQL/MySQL</li>
+                <li> C#</li>
+                <li>Figma</li>
+
+            </ul>
+        </div>
+        <div class="box">
+            <h2>My experience</h2>
+            <p>I am currently a student pursuing a MBO-4 Software Developer degree.</p>
+            <p>As a beginner Full-stack developer, I have worked on several small projects to build my skills and gain practical experience in web and back-end development.</p>
+            <p>I am eager to continue learning and growing as a developer, and I am excited to take on new challenges and opportunities in the field.</p>
+        </div>
+    </div>
+</section>
+
+    <!-- PROJECTS -->
+    <section class="section-anim" id="projects">
+        <h1>My projects</h1>
+        <div class="flex-container">
+            <div class="box">
+                <h2>Web-shop</h2>
+
+                <p>"here wil be a foto"</p>
+                <p>With a small group of 4 students, we have made a web-shop using PHP and HTML with CSS. This website has an inlog-system and an order list with different position.</p>
+                <a href="https://github.com/MISTER-SNOEP/webshopV2/tree/main/safawebshopV2" title="Explore more" target="_blank">To the code</a>
+            </div>
+            <div class="box">
+                <h2>Side Project</h2>
+                <img src="side_project.jpg" style="max-width: 140%;">
+                <p>This is a side project that I and two other students are working on to further develop our skills as a full-stuck developers. The project is focused on creating a web application that will help people to manage their time while making tasks. We are currently making it using React.js and Node.js</p>
+                <a href="" title="Explore more" target="_blank">Not at the moment</a>
+            </div>
+            <div class="box"> 
+
+                <h2></h2>
+
+            </div>
+        </div>
+    </section>
+        <!-- CONTACT -->
+    <section id="contact" class = "section-anim">
+
+        <div class=" flex-container contact">
+            <div class="box;">
+                <h1>Contact Me</h1>
+                
+                <p>If you would like to get in touch with me, please feel free to reach out via email or social media.
+                I am always open to discussing new projects, collaborations, or opportunities to learn and grow as a Full-stack developer.
+                You can find me using the links below</p>
+            </div>
+        </div>
+    </section>
+            <!-- FOOTER -->
+    <footer style="background-color: rgb(34, 34, 34); ">
+        <br>
+        <div class="social-icons" role="navigation" aria-label="Social links">
+            <a href="https://www.instagram.com/_lateriii_?igsh=MW9laW9wcTUwY2s1ZA%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" class="insta" aria-label="Instagram">
+                <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            </a>
+
+            <a href="https://github.com/Lateri-1" target="_blank" rel="noopener noreferrer" class="git" aria-label="GitHub">
+                <i class="fa-brands fa-github" aria-hidden="true"></i>
+            </a>
+
+            <a href="mailto: d.cherkasin@student.alfa-college.nl" class="mail" aria-label="Email">
+                <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+            </a>
+        </div>
+        <br>
+        <br> 
+        <br>
+    </footer>
+    <!-- JS voor animaties -->
+    <script>
+        const sections = document.querySelectorAll("section");
+        const navLinks = document.querySelectorAll(".nav li a");
+
+        window.addEventListener("scroll", () => {
+            let current = "";
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 150;
+                if(pageYOffset >= sectionTop) {
+                    current = section.getAttribute("id");
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove("active");
+                if(link.getAttribute("href") === "#" + current) {
+                    link.classList.add("active");
+                }
+            });
+        });
+        /*tekst animatie */
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                } 
+                
+                else {
+                    entry.target.classList.remove('visible');
+                }
+            });
+        }, { threshold: 0.2 });
+
+
+            /* scroll arrow */
+        document.querySelectorAll('.section-anim').forEach((section) => {
+            observer.observe(section);
+        });
+        function scrollTONextSection() {
+            const section = Array.from(document.querySelectorAll("section"))[1];
+            const currentScroll = window.scrollY;
+            const nextSection = section.offsetTop > currentScroll + 10 ? section : null;
+            if (nextSection) {
+                window.scrollTo({
+                    top: nextSection.offsetTop - 80,
+                });
+            }
+        }
+    </script>
+    <script>
+// copy email als het niet gelukt
+document.querySelector('.mail').addEventListener('click', function (e) {
+    e.preventDefault(); // voorspelen openen mailto
+    const email = 'd.cherkasin@student.alfa-college.nl';
+  // openen van het ap
+    window.location.href = 'mailto:' + email;
+  // extra copy
+    navigator.clipboard.writeText(email).then(() => {
+    alert('📋 Email is gekopierd: ' + email);
+    }).catch(() => {
+    alert('Email: ' + email);
+    });
+});
+</script>
+</body>
+</html>
