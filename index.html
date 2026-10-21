@@ -3,123 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <title>Dmytro Cherkasin</title>
+    <meta name="description" content="Portfolio of Dmytro Cherkasin, a beginner full-stack developer from the Netherlands.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
 </head>
 <body>
-        <section id="home">
-    <br>
-    <!-- NAV BAR -->
-    <ul class="nav">
-        <li><a href="#home">HOME</a></li>
-        <li><a href="#about-me">ABOUT ME</a></li>
-        <li><a href="#projects">MY PROJECTS</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-    </ul>
-    <!-- HEADER -->
-    <header class="section-anim" style="margin-top: 30px;">
-        
+    <!-- CURSOR GLOW -->
+    <div class="cursor-glow" aria-hidden="true"></div>
+
+    <section id="home">
+        <!-- NAV BAR -->
+        <ul class="nav">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about-me">ABOUT ME</a></li>
+            <li><a href="#projects">MY PROJECTS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+
+        <!-- HEADER -->
+        <header class="section-anim">
             <div class="flex-container" style="align-items: center;">
                 <div class="box">
-                    <img src="My foto.jpg" alt="My foto" style="max-width: 200px; min-width: 150px;">
+                    <img class="hero-photo" src="my-foto.jpg" alt="Photo of Dmytro Cherkasin">
                 </div>
-                <div class="box">Hello, my name is Dmytro and I'm a beginner Full-stack developer. My goal is to grow as a developer and create visually appealing, interactive, and user-friendly websites and applications that provide a great user experience.</div>
-                <br>
-                <br>
+                <div class="box hero-text">
+                    <h1 class="hero-name">Dmytro Cherkasin</h1>
+                    <p class="hero-lead">Beginner full-stack developer. I build visually appealing, interactive and user-friendly websites and applications.</p>
+                    <p>Below you'll find my skills, my projects and how to contact me. Thank you for visiting!</p>
+                </div>
             </div>
-            <p>On this website, you will find information about me, my skills, and my experience.</p>
-            <p>You can also learn more about my projects, and at the end, you`ll find my contact information if you`re interested in working with me.</p>
-            <p>Thank you for visiting my website!</p>
-    </header>
-        </section>
+        </header>
+    </section>
 
-        <button class="next-btn" onclick="scrollTONextSection()"><span class="arrow">↓</span></button>
+    <button class="next-btn" onclick="scrollTONextSection()" aria-label="Scroll to the next section"><span class="arrow">↓</span></button>
 
     <!-- ABOUT ME -->
     <section class="section-anim" id="about-me">
-    <h1>About Me</h1>
+        <h1>About Me</h1>
 
-
-    <div class="flex-container about-row">
-        <div class="box">
-            <h2>Personal Information</h2>
-            <p>Name: Dmytro Cherkasin</p>
-            <p>Age: 19</p>
-            <p>Location: The Netherlands</p>
-            <p>Education: MBO-4 Software Developer</p>
+        <div class="flex-container about-row">
+            <div class="box">
+                <h2>Personal Information</h2>
+                <p>Name: Dmytro Cherkasin</p>
+                <p>Age: 19</p>
+                <p>Location: The Netherlands</p>
+                <p>Education: MBO-4 Software Developer</p>
+            </div>
+            <div class="box">
+                <p>Hello, I am an aspiring web developer focused on creating modern, interactive, and visually appealing websites and web applications. My goal is to build solutions that are not only functional, but also intuitive, user-friendly, and enjoyable for a wide range of users. I am passionate about learning new technologies and staying up-to-date with the latest trends in full-stack development to ensure that my projects are innovative and effective.</p>
+            </div>
         </div>
-        <div class="box">
-            <p>Hello, I am an aspiring web developer focused on creating modern, interactive, and visually appealing websites and web applications. My goal is to build solutions that are not only functional, but also intuitive, user-friendly, and enjoyable for a wide range of users. I am passionate about learning new technologies and staying up-to-date with the latest trends in full-stuck development to ensure that my projects are innovative and effective.</p>
-        </div>
-    </div>
 
-
-    <div class="flex-container about-row">
-        <div class="box">
-            <h2>My skills</h2>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Python</li>
-                <li>PHP</li>
-                <li>SQL/MySQL</li>
-                <li> C#</li>
-                <li>Figma</li>
-
-            </ul>
+        <div class="flex-container about-row">
+            <div class="box">
+                <h2>My skills</h2>
+                <div class="skill-group">
+                    <h3>Frontend</h3>
+                    <ul class="chips">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Figma</li>
+                    </ul>
+                </div>
+                <div class="skill-group">
+                    <h3>Backend</h3>
+                    <ul class="chips">
+                        <li>PHP</li>
+                        <li>Python</li>
+                        <li>C#</li>
+                    </ul>
+                </div>
+                <div class="skill-group">
+                    <h3>Data</h3>
+                    <ul class="chips">
+                        <li>SQL/MySQL</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="box">
+                <h2>My experience</h2>
+                <p>I am currently a student pursuing a MBO-4 Software Developer degree.</p>
+                <p>As a beginner Full-stack developer, I have worked on several small projects to build my skills and gain practical experience in web and back-end development.</p>
+                <p>I am eager to continue learning and growing as a developer, and I am excited to take on new challenges and opportunities in the field.</p>
+            </div>
         </div>
-        <div class="box">
-            <h2>My experience</h2>
-            <p>I am currently a student pursuing a MBO-4 Software Developer degree.</p>
-            <p>As a beginner Full-stack developer, I have worked on several small projects to build my skills and gain practical experience in web and back-end development.</p>
-            <p>I am eager to continue learning and growing as a developer, and I am excited to take on new challenges and opportunities in the field.</p>
-        </div>
-    </div>
-</section>
+    </section>
 
     <!-- PROJECTS -->
     <section class="section-anim" id="projects">
         <h1>My projects</h1>
-        <div class="flex-container">
-            <div class="box">
+        <div class="flex-container" style="align-items: flex-start;">
+            <div class="box project">
                 <h2>Web-shop</h2>
-
-                <p>"here wil be a foto"</p>
-                <p>With a small group of 4 students, we have made a web-shop using PHP and HTML with CSS. This website has an inlog-system and an order list with different position.</p>
-                <a href="https://github.com/MISTER-SNOEP/webshopV2/tree/main/safawebshopV2" title="Explore more" target="_blank">To the code</a>
+                <!-- TODO: replace this placeholder with <img class="project-img" src="webshop.jpg" alt="Web-shop screenshot"> -->
+                <div class="project-thumb" role="img" aria-label="Screenshot coming soon">Screenshot coming soon</div>
+                <p>With a small group of 4 students, we have made a web-shop using PHP and HTML with CSS. This website has a login system and an order list with different position.</p>
+                <ul class="chips">
+                    <li>PHP</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                </ul>
+                <a class="cta" href="https://github.com/MISTER-SNOEP/webshopV2/tree/main/safawebshopV2" title="View the code on GitHub" target="_blank" rel="noopener noreferrer">View code</a>
             </div>
-            <div class="box">
+            <div class="box project">
                 <h2>Side Project</h2>
-                <img src="side_project.jpg" style="max-width: 140%;">
-                <p>This is a side project that I and two other students are working on to further develop our skills as a full-stuck developers. The project is focused on creating a web application that will help people to manage their time while making tasks. We are currently making it using React.js and Node.js</p>
-                <a href="" title="Explore more" target="_blank">Not at the moment</a>
+                <img class="project-img" src="side_project.jpg" alt="Preview of the side project">
+                <p>This is a side project that I and two other students are working on to further develop our skills as full-stack developers. The project is focused on creating a web application that will help people to manage their time while making tasks. We are currently making it using React.js and Node.js.</p>
+                <ul class="chips">
+                    <li>React.js</li>
+                    <li>Node.js</li>
+                </ul>
+                <span class="badge">In progress</span>
             </div>
-            <div class="box"> 
+            <div class="box project">
 
-                <h2></h2>
-
+                <h2>TO DO list</h2>
+                <img class="project-img" src="to-do-list(1).jpg" alt="Preview of the TO DO list">
+                <p>This was one of task that I received from School.</p>
+                <ul class="chips">
+                    <li>React.js</li>
+                    <li>PHP</li>
+                </ul>
+                <a class="cta" href="https://github.com/Lateri-1/TO-DO-app" title="View the code on GitHub" target="_blank" rel="noopener noreferrer">View code</a>
             </div>
         </div>
     </section>
-        <!-- CONTACT -->
-    <section id="contact" class = "section-anim">
 
-        <div class=" flex-container contact">
-            <div class="box;">
+    <!-- CONTACT -->
+    <section id="contact" class="section-anim">
+        <div class="flex-container contact">
+            <div class="box">
                 <h1>Contact Me</h1>
-                
                 <p>If you would like to get in touch with me, please feel free to reach out via email or social media.
                 I am always open to discussing new projects, collaborations, or opportunities to learn and grow as a Full-stack developer.
-                You can find me using the links below</p>
+                You can find me using the links below.</p>
+                <a class="cta mail" href="mailto:d.cherkasin@student.alfa-college.nl">Write me</a>
             </div>
         </div>
     </section>
-            <!-- FOOTER -->
-    <footer style="background-color: rgb(34, 34, 34); ">
-        <br>
+
+    <!-- FOOTER -->
+    <footer>
         <div class="social-icons" role="navigation" aria-label="Social links">
             <a href="https://www.instagram.com/_lateriii_?igsh=MW9laW9wcTUwY2s1ZA%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" class="insta" aria-label="Instagram">
                 <i class="fa-brands fa-instagram" aria-hidden="true"></i>
@@ -129,53 +158,66 @@
                 <i class="fa-brands fa-github" aria-hidden="true"></i>
             </a>
 
-            <a href="mailto: d.cherkasin@student.alfa-college.nl" class="mail" aria-label="Email">
-                <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+            <!-- TODO: replace the href with the link to your LinkedIn profile -->
+            <a href="https://www.linkedin.com/in/дима-черкасин-834594445/?isSelfProfile=true" target="_blank" rel="noopener noreferrer" class="linkedin" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
             </a>
         </div>
-        <br>
-        <br> 
-        <br>
+        <p class="copyright">© <span id="year">2026</span> Dmytro Cherkasin</p>
     </footer>
-    <!-- JS voor animaties -->
+
+    <!-- toast for "email copied" -->
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
     <script>
         const sections = document.querySelectorAll("section");
         const navLinks = document.querySelectorAll(".nav li a");
 
-        window.addEventListener("scroll", () => {
+        /* active nav link + current section color */
+        function updateActiveSection() {
             let current = "";
             sections.forEach(section => {
                 const sectionTop = section.offsetTop - 150;
-                if(pageYOffset >= sectionTop) {
+                if (window.scrollY >= sectionTop) {
                     current = section.getAttribute("id");
                 }
             });
 
+            /* the last section (contact) is short, so scrollY may never reach its top:
+               at the very bottom of the page we force the last section */
+            const atBottom = window.scrollY > 0 &&
+                window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2;
+            if (atBottom) {
+                current = sections[sections.length - 1].getAttribute("id");
+            }
+
+            document.body.dataset.section = current || "home";
+
             navLinks.forEach(link => {
                 link.classList.remove("active");
-                if(link.getAttribute("href") === "#" + current) {
+                if (link.getAttribute("href") === "#" + current) {
                     link.classList.add("active");
                 }
             });
-        });
-        /*tekst animatie */
+        }
+        window.addEventListener("scroll", updateActiveSection, { passive: true });
+        updateActiveSection();
+
+        /* text animation: plays once, when a section first appears */
         const observer = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('visible');
-                } 
-                
-                else {
-                    entry.target.classList.remove('visible');
+                    observer.unobserve(entry.target);
                 }
             });
         }, { threshold: 0.2 });
 
-
-            /* scroll arrow */
         document.querySelectorAll('.section-anim').forEach((section) => {
             observer.observe(section);
         });
+
+        /* scroll arrow */
         function scrollTONextSection() {
             const section = Array.from(document.querySelectorAll("section"))[1];
             const currentScroll = window.scrollY;
@@ -186,21 +228,69 @@
                 });
             }
         }
+
+        /* footer year */
+        document.getElementById('year').textContent = new Date().getFullYear();
     </script>
     <script>
-// copy email als het niet gelukt
-document.querySelector('.mail').addEventListener('click', function (e) {
-    e.preventDefault(); // voorspelen openen mailto
+/* cursor glow + card spotlight */
+(function () {
+    const glow = document.querySelector('.cursor-glow');
+    const cards = document.querySelectorAll('section:not(#home) .box');
+    const canFollow = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!glow || !canFollow) return;
+
+    let targetX = window.innerWidth / 2, targetY = window.innerHeight / 2;
+    let x = targetX, y = targetY;
+
+    window.addEventListener('mousemove', (e) => {
+        targetX = e.clientX;
+        targetY = e.clientY;
+        glow.classList.add('active');
+
+        cards.forEach((card) => {
+            const r = card.getBoundingClientRect();
+            card.style.setProperty('--mx', (e.clientX - r.left) + 'px');
+            card.style.setProperty('--my', (e.clientY - r.top) + 'px');
+        });
+    }, { passive: true });
+    document.addEventListener('mouseleave', () => glow.classList.remove('active'));
+
+    function animate() {
+        const ease = reduceMotion ? 1 : 0.12;
+        x += (targetX - x) * ease;
+        y += (targetY - y) * ease;
+        glow.style.transform = `translate3d(${x}px, ${y}px, 0) translate(-50%, -50%)`;
+        requestAnimationFrame(animate);
+    }
+    animate();
+})();
+</script>
+    <script>
+/* email: open the mail app and copy the address as a backup */
+(function () {
     const email = 'd.cherkasin@student.alfa-college.nl';
-  // openen van het ap
-    window.location.href = 'mailto:' + email;
-  // extra copy
-    navigator.clipboard.writeText(email).then(() => {
-    alert('📋 Email is gekopierd: ' + email);
-    }).catch(() => {
-    alert('Email: ' + email);
+    const toast = document.getElementById('toast');
+    let timer;
+
+    function showToast(text) {
+        toast.textContent = text;
+        toast.classList.add('show');
+        clearTimeout(timer);
+        timer = setTimeout(() => toast.classList.remove('show'), 3000);
+    }
+
+    document.querySelectorAll('.mail').forEach((link) => {
+        link.addEventListener('click', function (e) {
+            e.preventDefault();
+            navigator.clipboard.writeText(email)
+                .then(() => showToast('Email copied: ' + email))
+                .catch(() => showToast('Email: ' + email));
+            window.location.href = 'mailto:' + email;
+        });
     });
-});
+})();
 </script>
 </body>
 </html>
