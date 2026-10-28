@@ -117,7 +117,7 @@ section > h1, .hero-name {
 }
 p { margin: 0 0 0.9em; max-width: 62ch; line-height: 1.6; color: #d4d4d4; }
 
-/* ---------- navigation (floating pill) ---------- */
+/* ---------- navigation  ---------- */
 .nav {
     position: fixed; top: 16px; left: 50%; translate: -50% 0;
     box-sizing: border-box;
@@ -141,7 +141,7 @@ p { margin: 0 0 0.9em; max-width: 62ch; line-height: 1.6; color: #d4d4d4; }
     background: color-mix(in srgb, var(--section-color) 16%, transparent);
 }
 
-/* ---------- hero ---------- */
+/* ---------- me ---------- */
 .flex-container { display: flex; align-items: flex-end; gap: 24px; flex-wrap: wrap; }
 #home .flex-container { gap: clamp(28px, 5vw, 72px); }
 #home .box { padding: 0; background: none; border: 0; backdrop-filter: none; }
@@ -276,7 +276,7 @@ section:not(#home) .box::before {
     display: flex;
     align-items: center; }
 .social-icons { 
-    display: flex; 
+    display: flex;
     gap: 16px; }
 .social-icons a {
     display: grid; 
